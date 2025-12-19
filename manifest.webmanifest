@@ -1,0 +1,17 @@
+{
+  "name": "Shark Footprints PWA",
+  "short_name": "鯊掌的桌球足跡",
+  "description": "鯊掌的桌球足跡",
+  "scope": "/shark-table-tennis-footprints/",
+  "start_url": "/shark-table-tennis-footprints/",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "display": "standalone", 
+  "icons": [
+      {
+        "src": "./shark-table-tennis-footprints.png",
+        "type": "image/jpg",
+        "sizes": "400x400"
+      }
+  ]
+}
