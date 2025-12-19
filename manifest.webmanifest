@@ -10,7 +10,7 @@
   "icons": [
       {
         "src": "./shark-table-tennis-footprints.png",
-        "type": "image/jpg",
+        "type": "image/png",
         "sizes": "400x400"
       }
   ]
