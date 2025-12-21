@@ -9,8 +9,8 @@
   "display": "standalone", 
   "icons": [
       {
-        "src": "./shark-table-tennis-footprints.png",
-        "type": "image/png",
+        "src": "./shark-table-tennis-footprints.jpg",
+        "type": "image/jpg",
         "sizes": "400x400"
       }
   ]
