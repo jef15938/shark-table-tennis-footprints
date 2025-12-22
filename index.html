@@ -26,17 +26,26 @@
             height: 100dvh;
             overflow: hidden;
         }
+
+        #btn-google-maps {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            padding: 6px;
+        }
     </style>
-    <button id="btn-fullscreen" style="position: absolute; top: 0; right: 0;">全螢幕</button>
-    <iframe
-        src="https://www.google.com/maps/d/u/0/embed?mid=1sikzP53hh9_PWnYN2V1TJbG_9VH-OR4&ehbc=2E312F&noprof=1&output=embed"
-        width="100%" style="margin-top: -70px;height:calc(100% + 70px);" id="my-map" allowfullscreen></iframe>
+    <button id="btn-google-maps">在 Google Maps 中開啟</button>
+    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1sikzP53hh9_PWnYN2V1TJbG_9VH-OR4&ehbc=2E312F&noprof=1"
+        width="100%" style="margin-top: -70px;height:calc(100% + 70px);border:0" id="my-map" allowfullscreen
+        frameborder="0" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 </body>
 
 <script>
-    document.getElementById("btn-fullscreen").addEventListener("click", function () {
-        document.getElementById("my-map").requestFullscreen();
+    document.getElementById("btn-google-maps").addEventListener("click", function () {
+        window.open(
+            "https://www.google.com/maps/d/viewer?mid=1sikzP53hh9_PWnYN2V1TJbG_9VH-OR4",
+            "_blank")
     })
 </script>
 
