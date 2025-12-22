@@ -28,16 +28,24 @@
         }
 
         #btn-google-maps {
+            display: none;
             position: absolute;
             top: 8px;
             right: 8px;
             padding: 6px;
         }
+
+        iframe {
+            /* margin-top: -70px; */
+            /* height: calc(100% + 70px); */
+            height: 100%;
+            width: 100%;
+            border: 0;
+        }
     </style>
     <button id="btn-google-maps">在 Google Maps 中開啟</button>
     <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1sikzP53hh9_PWnYN2V1TJbG_9VH-OR4&ehbc=2E312F&noprof=1"
-        width="100%" style="margin-top: -70px;height:calc(100% + 70px);border:0" frameborder="0"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+        rameborder="0" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 </body>
 
