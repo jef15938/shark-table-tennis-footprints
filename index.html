@@ -11,7 +11,7 @@
 
 <body>
     <style>
-         html {
+        html {
             -webkit-touch-callout: none;
             -webkit-user-select: none;
             -khtml-user-select: none;
@@ -27,9 +27,17 @@
             overflow: hidden;
         }
     </style>
-    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1sikzP53hh9_PWnYN2V1TJbG_9VH-OR4&ehbc=2E312F&noprof=1&output=embed"
-        width="100%" allowfullscreen style="margin-top: -70px;height:calc(100% + 70px);"></iframe>
+    <button id="btn-fullscreen" style="position: absolute; top: 0; right: 0;">全螢幕</button>
+    <iframe
+        src="https://www.google.com/maps/d/u/0/embed?mid=1sikzP53hh9_PWnYN2V1TJbG_9VH-OR4&ehbc=2E312F&noprof=1&output=embed"
+        width="100%" style="margin-top: -70px;height:calc(100% + 70px);" id="my-map" allowfullscreen></iframe>
 
 </body>
+
+<script>
+    document.getElementById("btn-fullscreen").addEventListener("click", function () {
+        document.getElementById("my-map").requestFullscreen();
+    })
+</script>
 
 </html>
