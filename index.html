@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>鯊掌的桌球足跡</title>
+    <title>鯊掌的桌球腳印</title>
     <link rel="manifest" href="./manifest.webmanifest">
 </head>
 
@@ -45,13 +45,18 @@
     </style>
     <button id="btn-google-maps">在 Google Maps 中開啟</button>
     <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1sikzP53hh9_PWnYN2V1TJbG_9VH-OR4&ehbc=2E312F&noprof=1"
-        rameborder="0" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        frameborder="0" id="my-maps"></iframe>
 
 </body>
 
 <script>
     document.getElementById("btn-google-maps").addEventListener("click", function () {
         window.open("https://www.google.com/maps/d/viewer?mid=1sikzP53hh9_PWnYN2V1TJbG_9VH-OR4", "_top")
+    });
+
+    document.getElementById("my-maps").addEventListener("load", function () {
+        console.log(this);
+        console.log(this.window);
     });
 </script>
 
